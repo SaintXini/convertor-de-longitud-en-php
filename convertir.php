@@ -30,7 +30,14 @@ function convertir_a_metros($valor, $unidad_desde){
     }
 }
 
-if()
+if(isset($_POST['convertir'])){
+    $valor = $_POST['valor'];
+    $desde = $_POST['desde'];
+    
+    $calculoDesde = convertir_a_metros($valor, $desde);
+
+    $resultado = $calculoDesde;
+}
 
 
 ?>

@@ -64,7 +64,7 @@ require "convertir.php";
                 <div class="col-sm-6">
                     <div class="mb-3">
                         <label for="valor">RESULTADO: </label>
-                        <input type="text" name="resultado" class="form-control">
+                        <input type="text" name="resultado" class="form-control" value="<?php if(isset($resultado)) echo $resultado; ?>">
                     </div>
                 </div>
             </div>
