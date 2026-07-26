@@ -1,0 +1,198 @@
+/* ============================================
+   Conversor de Longitud — tema "regla técnica"
+   Paleta: papel de plano + tinta azul + ámbar de cinta métrica
+   ============================================ */
+
+:root {
+  --paper: #F6F4EE;
+  --ink: #1B2A4A;
+  --ink-soft: #4A5A7A;
+  --grid-line: rgba(27, 42, 74, 0.08);
+  --amber: #E2A33D;
+  --amber-dark: #C4841F;
+  --white: #FFFFFF;
+  --radius: 10px;
+  --font-display: 'Space Grotesk', 'IBM Plex Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Space Mono', monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 32px 32px;
+  font-family: var(--font-display);
+  color: var(--ink);
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+/* ---------- Encabezado tipo cinta métrica ---------- */
+
+.ruler-header {
+  position: relative;
+  background: var(--ink);
+  padding: 48px 24px 28px;
+  margin-bottom: 48px;
+  overflow: hidden;
+}
+
+.ruler-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 14px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--amber) 0,
+    var(--amber) 2px,
+    transparent 2px,
+    transparent 24px
+  );
+  background-position: bottom;
+  opacity: 0.9;
+}
+
+.ruler-header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 14px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--amber) 0,
+    var(--amber) 1px,
+    transparent 1px,
+    transparent 12px
+  );
+  background-position: bottom;
+  height: 7px;
+  opacity: 0.5;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: var(--white);
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.eyebrow {
+  display: block;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 8px;
+}
+
+/* ---------- Tarjeta del formulario ---------- */
+
+.container {
+  max-width: 880px;
+  background: var(--white);
+  border: 1px solid var(--grid-line);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 2px rgba(27, 42, 74, 0.04), 0 12px 32px rgba(27, 42, 74, 0.08);
+  padding: 40px 36px 32px;
+}
+
+label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--ink-soft);
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.form-control,
+.form-select {
+  font-family: var(--font-mono);
+  border: 1.5px solid #DCD8CC;
+  border-radius: 6px;
+  padding: 10px 12px;
+  color: var(--ink);
+  background-color: var(--paper);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--amber);
+  box-shadow: 0 0 0 3px rgba(226, 163, 61, 0.25);
+  outline: none;
+  background-color: var(--white);
+}
+
+/* Input de resultado: se distingue como "lectura" tipo instrumento */
+input[name="resultado"] {
+  background-color: var(--ink);
+  color: var(--amber);
+  font-weight: 700;
+  font-size: 1.05rem;
+  border: none;
+  letter-spacing: 0.02em;
+}
+
+input[name="resultado"]:focus {
+  box-shadow: 0 0 0 3px rgba(27, 42, 74, 0.25);
+}
+
+/* ---------- Botón principal ---------- */
+
+.btn-primary {
+  background-color: var(--amber);
+  border: none;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  border-radius: 6px;
+  transition: transform 0.12s ease, background-color 0.15s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--amber-dark);
+  color: var(--white);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* ---------- Detalles ---------- */
+
+.row.mt-4 {
+  align-items: end;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 28px 20px 24px;
+    margin: 0 12px;
+  }
+
+  .ruler-header {
+    padding: 36px 16px 24px;
+    margin-bottom: 32px;
+  }
+}
