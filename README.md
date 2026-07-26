@@ -4,7 +4,7 @@ Aplicación web para convertir valores entre distintas unidades de longitud (mil
 
 ## 🚀 Demo
 
-🔗 **Ver proyecto desplegado:** [Agrega aquí tu enlace de deploy](https://tu-enlace-de-deploy.com)
+🔗 **Ver proyecto desplegado:** [Aún falta deployar](https://tu-enlace-de-deploy.com)
 
 ## 🖼️ Capturas de pantalla
 
@@ -13,7 +13,6 @@ Aplicación web para convertir valores entre distintas unidades de longitud (mil
   <img src="ruta/a/tu/imagen2.png" alt="Captura del resultado" width="45%">
 </p>
 
-> Reemplaza `ruta/a/tu/imagen1.png` y `ruta/a/tu/imagen2.png` con las rutas reales de tus imágenes (por ejemplo, dentro de una carpeta `assets/` o `screenshots/` del repositorio).
 
 ## 🛠️ Tecnologías utilizadas
 
@@ -42,7 +41,7 @@ Aplicación web para convertir valores entre distintas unidades de longitud (mil
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+   git clone https://github.com/SaintXini/convertor-de-longitud-en-php.git
    ```
 2. Asegúrate de tener PHP instalado (o usa XAMPP / Laragon / WAMP).
 3. Coloca el proyecto en la carpeta de tu servidor local (por ejemplo, `htdocs`).
@@ -54,7 +53,7 @@ Aplicación web para convertir valores entre distintas unidades de longitud (mil
 
 ## 👤 Autor
 
-- **Tu Nombre** — [LinkedIn](https://linkedin.com/in/tu-usuario) · [GitHub](https://github.com/tu-usuario)
+- **Martín Santiago Con Xinico** — [LinkedIn](https://www.linkedin.com/in/mart%C3%ADn-con-xinico/) · [GitHub](https://github.com/SaintXini)
 
 ---
 
