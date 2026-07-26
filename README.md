@@ -9,8 +9,9 @@ Aplicación web para convertir valores entre distintas unidades de longitud (mil
 ## 🖼️ Capturas de pantalla
 
 <p align="center">
-  <img src="ruta/a/tu/imagen1.png" alt="Captura del formulario" width="45%">
-  <img src="ruta/a/tu/imagen2.png" alt="Captura del resultado" width="45%">
+  <img width="45%" alt="Captura formulario" src="https://github.com/user-attachments/assets/7b6ef8d1-ddd0-4347-b4ed-bd05a1a3e7fa" />
+  <img width="45%" alt="Captura resultado" src="https://github.com/user-attachments/assets/7a911127-1dc6-4b37-8040-619aaaf0cb96" />
+
 </p>
 
 
