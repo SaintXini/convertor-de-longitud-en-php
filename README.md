@@ -35,6 +35,7 @@ Aplicación web para convertir valores entre distintas unidades de longitud (mil
 ```
 ├── index.php        # Formulario y lógica de conversión
 ├── convertir.php     # Archivo requerido (funciones/config adicional)
+├── style.css     # Archivo de diseño 
 └── README.md
 ```
 
